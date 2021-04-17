@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1618153961 source:c:\users\bnflive10\documents\github\inar\curso-de-c\arquivomparam\arquivomparam.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

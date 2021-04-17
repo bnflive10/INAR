@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1618224714 source:c:\users\bnflive10\documents\github\inar\curso-de-c\grafos\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1618227907 c:\users\bnflive10\documents\github\inar\curso-de-c\grafos\grafo.h
+
+1618228686 source:c:\users\bnflive10\documents\github\inar\curso-de-c\grafos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+

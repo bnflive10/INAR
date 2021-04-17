@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1618165143 source:c:\users\bnflive10\documents\github\inar\curso-de-c\listasequencial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ListaSequencial.h"
+
+1618164348 c:\users\bnflive10\documents\github\inar\curso-de-c\listasequencial\listasequencial.h
+
+1618164256 source:c:\users\bnflive10\documents\github\inar\curso-de-c\listasequencial\listasequencial.c
+	<stdio.h>
+	<stdlib.h>
+	"ListaSequencial.h"
+
