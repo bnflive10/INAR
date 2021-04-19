@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1618829623 source:c:\users\bnflive10\documents\github\inar\trabalho1\arvorebinaria\arvorebinaria.c
+1618837448 source:c:\users\bnflive10\documents\github\inar\trabalho1\arvorebinaria\arvorebinaria.c
 	<stdio.h>
 	<stdlib.h>
 	"ArvoreBinaria.h"
