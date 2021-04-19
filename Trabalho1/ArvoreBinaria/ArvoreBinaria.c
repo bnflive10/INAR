@@ -72,3 +72,58 @@ void preOrdem_ArvBin(ArvBin *raiz){
         preOrdem_ArvBin(&((*raiz)->dir));
     }
 }
+
+void emOrdem_ArvBin(ArvBin *raiz){
+    if(raiz == NULL)
+        return;
+    if(*raiz !=NULL){
+        preOrdem_ArvBin(&((*raiz)->esq));
+        printf("%d\n", (*raiz)->info);
+        preOrdem_ArvBin(&((*raiz)->dir));
+    }
+}
+
+void posOrdem_ArvBin(ArvBin *raiz){
+    if(raiz == NULL)
+        return;
+    if(*raiz !=NULL){
+        preOrdem_ArvBin(&((*raiz)->esq));
+        preOrdem_ArvBin(&((*raiz)->dir));
+        printf("%d\n", (*raiz)->info);
+    }
+}
+
+int insere_ArvBin(ArvBin *raiz, int valor){
+    if(raiz == NULL)
+        return 0;
+    struct NO* novo;
+    novo = (struct NO*) malloc(sizeof(struct NO));
+    if(novo == NULL)
+        return 0;
+    novo->info = valor;
+    novo->esq = NULL;
+    novo->dir = NULL;
+
+    if(*raiz == NULL)
+        *raiz = novo;
+    else{
+        struct NO* atual = *raiz;
+        struct NO* ant = NULL;
+        while(atual != NULL){
+            ant = atual;
+            if(valor == atual->info){
+                free(novo);
+                return 0;
+            }
+            if(valor > atual->info)
+                atual = atual->dir;
+            else
+                atual = atual->esq;
+        }
+        if(valor > ant->info)
+            ant->dir = novo;
+        else
+            ant->esq = novo;
+    }
+    return 1;
+}
