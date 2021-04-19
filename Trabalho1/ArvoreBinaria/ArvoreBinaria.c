@@ -186,7 +186,6 @@ int consulta_ArvBin(ArvBin *raiz, int valor){
         if(valor > atual->info){
             atual = atual->dir;
         }
-
         else
             atual = atual->esq;
     }
